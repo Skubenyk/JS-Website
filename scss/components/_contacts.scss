@@ -1,0 +1,151 @@
+//*Contacts
+
+//*Contacts block
+.contacts {
+  background-color: $c-white;
+  font-size: $fs-base;
+  line-height: 15px;
+  color: $c-black;
+  // Media
+  @media screen and (max-width: 480px) {
+    font-size: 8px;
+  }
+  &__wrapper {
+    justify-content: center;
+    flex-flow: column;
+    display: flex;
+    padding: 10px;
+  }
+
+  //*Title
+  &__title {
+    font-size: $fs-title3;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 60px;
+    // Media
+    @media screen and (max-width: 1024px) {
+      margin-top: 50px;
+      font-size: 18px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 20px;
+      margin-top: 40px;
+    }
+    @media screen and (max-width: 480px) {
+      margin-bottom: 10px;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+  }
+  
+  //*Text map block
+  &__text-map {
+    justify-content: center;
+    margin-bottom: 60px;
+    display: flex;
+    padding: 5px;
+    // Media
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 50px;
+    }
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      margin-bottom: 40px;
+      align-self: center;
+      max-width: 370px;
+      width: 100%;
+    }
+    @media screen and (max-width: 480px) {
+      margin-bottom: 20px;
+      max-width: 240px;
+    }
+  }
+
+  //*Text block
+  &__text {
+    margin-right: 15px;
+    margin-left: 15px;
+    // Media
+    @media screen and (max-width: 1024px) {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    @media screen and (max-width: 480px) {
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+  }
+  &__text-title {
+    margin-bottom: 15px;
+    line-height: 18px;
+    font-size: 16px;
+    // Media
+    @media screen and (max-width: 1024px) {
+      line-height: 16px;
+      font-size: 14px;
+    }
+    @media screen and (max-width: 480px) {
+      margin-bottom: 10px;
+      text-align: center;
+      line-height: 14px;
+      font-size: 12px;
+    }
+  }
+  &__text-content {
+    padding: 5px;
+  }
+  .content-address,
+  .content-tel,
+  .content-time {
+    margin-bottom: 25px;
+    display: flex;
+    // Media
+    @media screen and (max-width: 768px) {
+      margin-bottom: 15px;
+    }
+    @media screen and (max-width: 480px) {
+      margin-bottom: 10px;
+    }
+  }
+  .icon {
+    margin-right: 15px;
+    color: $c-orange;
+    font-size: 20px;
+    // Media
+    @media screen and (max-width: 1024px) {
+      margin-right: 10px;
+    }
+    @media screen and (max-width: 480px) {
+      margin-right: 5px;
+      font-size: 14px;
+    }
+  }
+  .address,
+  .tel,
+  .time {
+    padding: 3px;
+  }
+
+  //*Map block
+  &__map {
+    margin-right: 15px;
+    margin-left: 15px;
+    max-width: 450px;
+    height: 300px;
+    width: 100%;
+    // Media
+    @media screen and (max-width: 1024px) {
+      margin-right: 10px;
+      margin-left: 10px;
+      max-width: 340px;
+    }
+    @media screen and (max-width: 480px) {
+      margin-right: 5px;
+      margin-left: 5px;
+      max-width: 217px;
+      height: 200px;
+    }
+  }
+}

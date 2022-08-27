@@ -1,0 +1,30 @@
+//-*Registration
+
+mixin registration()
+  //-*Registration form
+  .container
+    form(class="form" method="post" id="js-registration-form")
+      //-*Title form
+      h2.form__title РЕГИСТРАЦИЯ
+      .form__wrapper
+        //-*First name
+        label.form__label(for="firstName")
+          input(name="firstName" placeholder="Имя" type="text" class="form__input" id="js-registration-form-first-name")
+        //-*Last name
+        label.form__label(for="lastName")
+          input(name="lastName" placeholder="Фамилия" type="text" class="form__input" id="js-registration-form-last-name")
+        //-*User name
+        label.form__label(for="userName")
+          input(name="userName" placeholder="Имя пользователя" type="text" class="form__input" id="js-registration-form-user-name")
+        //-*Email
+        label.form__label(for="email")
+          input(name="email" placeholder="Почта" type="email" class="form__input" id="js-registration-form-email")
+        //-*Password
+        label.form__label(for="password")
+          input(name="password" placeholder="Пароль" type="password" class="form__input" id="js-registration-form-password")
+        //-*Buttons
+        .form__button
+          button(type="submit" class="form__button-submit" id="js-reg-button-submit") 
+            span Регистрация
+          button(type="button" class="form__button-close" id="js-reg-button-close")
+            span ЗАКРЫТЬ   

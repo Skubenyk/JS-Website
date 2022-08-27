@@ -1,0 +1,125 @@
+//*Registration
+
+//*Registration block
+.form {
+  box-shadow: 0 0 3px 1px rgba(221, 221, 221, 1);
+  transform: translate(-50%, -50%);
+  background-color: $c-orange;
+  flex-direction: column;
+  border-radius: 10px;
+  position: absolute;
+  position: fixed;
+  padding: 20px;
+  display: flex;
+  height: 375px;
+  width: 320px;
+  z-index: 999;
+  left: 50%;
+  top: 50%;
+  /* Hide */
+  pointer-events: none;
+  opacity: 0;
+  // Media
+  @media screen and (max-width: 1024px) {
+    height: 355px;
+    width: 290px;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 18px;
+    height: 335px;
+    width: 250px;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 15px;
+    height: 290px;
+    width: 220px;
+  }
+
+  //*Title form
+  &__title {
+    margin-bottom: 20px;
+    line-height: 10px;
+    font-size: 24px;
+    // Media
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 18px;
+      line-height: 10px;
+      font-size: 18px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 16px;
+      font-size: 16px;
+    }
+  }
+  &__wrapper {
+    flex-direction: column;
+    display: flex;
+  }
+  &__input {
+    box-shadow: 0 0 3px 1px rgba(221, 221, 221, 1);
+    border: 2px solid $c-white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 7px;
+    width: 100%;
+    // Media
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 18px;
+      border-radius: 8px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 16px;
+      border-radius: 6px;
+    }
+    @media screen and (max-width: 480px) {
+      margin-bottom: 12px;
+      border-radius: 4px;
+      padding: 5px;
+    }
+  }
+
+  //*Buttons
+  &__button-submit,
+  &__button-close {
+    transform: translate(-50%, 0);
+    flex-direction: column;
+    border-radius: 4px;
+    width: fit-content;
+    position: relative;
+    cursor: pointer;
+    color: $c-white;
+    padding: 7px;
+    display: flex;
+    border: none;
+    height: 26px;
+    left: 50%;
+    // Media
+    @media screen and (max-width: 1024px) {
+      padding: 6px;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 5px;
+      height: 22px;
+    }
+    @media screen and (max-width: 480px) {
+      padding: 4px;
+      height: 20px;
+    }
+  }
+  &__button-submit {
+    background-color: $c-brown-light;
+    font-weight: 700;
+  }
+  &__button-close {
+    background-color: $c-orange;
+    color: $c-black;
+    font-size: 8px;
+  }
+}
+.show-reg {
+  pointer-events: all;
+  opacity: 1;
+}
+.error-reg {
+  border: 2px solid $c-red;
+}

@@ -1,0 +1,151 @@
+//*Services
+
+//*Services block
+.services {
+  background-color: $c-white;
+  a {
+    color: $c-brown;
+  }
+  &__wrapper {
+    padding: 10px;
+  }
+
+  //*Card block
+  &__card {
+    justify-content: space-between;
+    transform: translate(-50%, 0);
+    margin-bottom: 50px;
+    margin-right: 10px;
+    position: relative;
+    margin-left: 10px;
+    margin-top: 50px;
+    max-width: 680px;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 5px;
+    width: 100%;
+    left: 50%;
+    // Media
+    @media screen and (max-width: 1024px) {
+      justify-content: center;
+      margin-bottom: 40px;
+      margin-top: 40px;
+    }
+    @media screen and (max-width: 768px) {
+      justify-content: center;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+    @media screen and (max-width: 480px) {
+      justify-content: center;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+  }
+  &__card-therapy,
+  &__card-surgery,
+  &__card-neurology,
+  &__card-orthopedics,
+  &__card-dermatology,
+  &__card-ophthalmology,
+  &__card-cardiology,
+  &__card-dentistry,
+  &__card-reproductology,
+  &__card-diagnostics,
+  &__card-laboratory,
+  &__card-oncology,
+  &__card-endocrinology,
+  &__card-exotic,
+  &__card-pharmacy,
+  &__card-grooming {
+    box-shadow: 0 0 3px 1px rgba(221, 221, 221, 1);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    max-width: 160px;
+    padding: 10px;
+    width: 100%;
+    // Media
+    @media screen and (max-width: 1024px) {
+      margin-right: 10px;
+      border-radius: 8px;
+      max-width: 145px;
+      padding: 8px;
+    }
+    @media screen and (max-width: 768px) {
+      border-radius: 6px;
+      max-width: 120px;
+      padding: 6px;
+    }
+    @media screen and (max-width: 480px) {
+      border-radius: 4px;
+      max-width: 100px;
+      padding: 4px;
+    }
+  }
+  .title {
+    margin-bottom: 5px;
+  }
+  .content-text {
+    @media screen and (max-width: 480px) {
+      font-size: 8px;
+    }
+  }
+  .content-therapy,
+  .content-surgery,
+  .content-neurology,
+  .content-orthopedics,
+  .content-dermatology,
+  .content-ophthalmology,
+  .content-cardiology,
+  .content-dentistry,
+  .content-reproductology,
+  .content-diagnostics,
+  .content-laboratory,
+  .content-oncology,
+  .content-endocrinology,
+  .content-exotic,
+  .content-pharmacy,
+  .content-grooming {
+    justify-content: space-between;
+    display: flex;
+  }
+  .content-text {
+    align-self: end;
+  }
+  .content-therapy-icon,
+  .content-surgery-icon,
+  .content-neurology-icon,
+  .content-orthopedics-icon,
+  .content-dermatology-icon,
+  .content-ophthalmology-icon,
+  .content-cardiology-icon,
+  .content-dentistry-icon,
+  .content-laboratory-icon,
+  .content-oncology-icon,
+  .content-pharmacy-icon,
+  .content-reproductology-icon,
+  .content-endocrinology-icon,
+  .content-grooming-icon {
+    @media screen and (max-width: 768px) {
+      padding-bottom: 15px;
+    }
+  }
+  .icon {
+    font-size: 50px;
+    color: $c-orange;
+    // Media
+    @media screen and (max-width: 768px) {
+      font-size: 45px;
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 40px;
+    }
+  }
+  // Hover effect
+  a:hover {
+    .icon {
+      transition: 1.2s;
+      color: $c-brown;
+    }
+  }
+}

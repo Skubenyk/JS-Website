@@ -1,0 +1,70 @@
+//-*Footer
+
+mixin footer()
+  //-*Footer block
+  footer.footer
+    .footer__wrapper
+      //-*Logo block
+      .footer__logo
+        .footer__logo-image
+          a(href="#")
+            img(src="./assets/image/logo.png" alt="logo").logo-image
+        .footer__logo-text 
+          .footer__logo-title Айболит
+          .footer__logo-subtitle ветеринарная клиника
+          .footer__logo-text-politics Политика конфиденциальности в отношении обработки персональных данных
+      //-*Link block
+      .footer__link
+        //-*Сolumn1 block 
+        .footer__link-column1
+          .link-column
+            a(href="#") Главная
+          .link-column
+            a(href="#") Услуги и цены
+          .link-column
+            a(href="#") История компании
+          .link-column
+            a(href="#") Наши специалисты
+          .link-column
+            a(href="#") Вакансии
+          .link-column
+            a(href="#") Реквизиты
+          .link-column
+            a(href="#") Онлайн-оплата
+        //-*Сolumn2 block  
+        .footer__link-column2
+          .link-column
+            a(href="#") Отзывы
+          .link-column
+            a(href="#") Контакты
+          .link-column
+            a(href="#") Груминг-салон
+          .link-column
+            a(href="#") Косметика
+          .link-column
+            a(href="#") Новости и акции
+          .link-column
+            a(href="#") Блог
+      //-*Apps block
+      .footer__apps
+        .footer__apps-mobile
+          a(href="#")
+            img(src="./assets/image/app-store.png" alt="logo").app-store
+          a(href="#")
+            img(src="./assets/image/google-play.png" alt="logo").google-play
+        .footer__apps-icon
+          a(href="#").footer__icon-instagram
+            svg.icon icon-instagram
+              use(xlink:href="#icon-instagram")
+          a(href="#").footer__icon-facebook    
+            svg.icon icon-facebook
+              use(xlink:href="#icon-facebook")
+          a(href="#").footer__icon-vk
+            svg.icon icon-vk
+              use(xlink:href="#icon-vk")
+          a(href="#").footer__icon-youtube   
+            svg.icon icon-youtube
+              use(xlink:href="#icon-youtube")
+        .footer__apps-mail
+          a(href="https://www.google.com/intl/ru/gmail/about/") aibolit@gmail.com
+

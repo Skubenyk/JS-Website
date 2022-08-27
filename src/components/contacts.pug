@@ -1,0 +1,29 @@
+//-*Contacts
+
+mixin  contacts()
+  //-*Contacts block
+  section.contacts
+    .contacts__wrapper
+      //-*Title
+      h3.contacts__title Контакты
+      //-*Text map block
+      .contacts__text-map
+        //-*Text
+        .contacts__text
+          .contacts__text-title Айболит на Подоле 
+          .contacts__text-content
+            .content-address
+              svg.icon icon-places
+                use(xlink:href="#icon-places")
+              .address ул.Зелёный Остров, 2
+            .content-tel 
+              svg.icon icon-phone
+                use(xlink:href="#icon-phone")
+              .tel 57 55 75
+            .content-time 
+              svg.icon icon-time
+                use(xlink:href="#icon-time")
+              .time Круглосуточно
+        //-*Map block
+        .contacts__map(id="js-map")
+

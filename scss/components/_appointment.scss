@@ -1,0 +1,318 @@
+//*Appointment
+
+//*Appointment block
+.appointment {
+  background-color: $c-white;
+  position: relative;
+  color: $c-black;
+  &__wrapper {
+    padding: 10 10 10 0px;
+  }
+
+  //*Text image block
+  &__text-image {
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    padding: 5px;
+    // Media
+    @media screen and (max-width: 768px) {
+      justify-content: center;
+    }
+  }
+
+  //*Text icon block
+  &__text-icon {
+    flex-direction: column;
+    margin-right: 10px;
+    margin-left: 10px;
+    max-width: 350px;
+    display: flex;
+    padding: 5px;
+    width: 100%;
+    // Media
+    @media screen and (max-width: 1024px) {
+      max-width: 290px;
+    }
+    @media screen and (max-width: 768px) {
+      max-width: 240px;
+    }
+  }
+  &__text {
+    margin-bottom: 100px;
+    // Media
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 80px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 65px;
+    }
+    @media screen and (max-width: 480px) {
+      margin-bottom: 50px;
+    }
+  }
+  &__text-title {
+    font-size: $fs-title2;
+    margin-bottom: 25px;
+    line-height: 50px;
+    // Media
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 20px;
+      line-height: 30px;
+      font-size: 30px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 15px;
+      text-align: center;
+      line-height: 22px;
+      font-size: 25px;
+    }
+    @media screen and (max-width: 480px) {
+      margin-bottom: 10px;
+      line-height: 18px;
+      font-size: 20px;
+    }
+  }
+  .button-open {
+    background-color: $c-orange;
+    padding-right: 35px;
+    border-radius: 17px;
+    width: fit-content;
+    text-align: center;
+    padding-left: 35px;
+    font-weight: 800;
+    color: $c-white;
+    border: none;
+    height: 35px;
+    // Media
+    @media screen and (max-width: 1024px) {
+      padding-right: 20px;
+      border-radius: 14px;
+      padding-left: 20px;
+      font-size: 8px;
+      height: 30px;
+    }
+    @media screen and (max-width: 768px) {
+      padding-right: 12px;
+      border-radius: 10px;
+      padding-left: 12px;
+      display: block;
+      margin: 0 auto;
+      height: 25px;
+    }
+    @media screen and (max-width: 480px) {
+      padding-right: 10px;
+      border-radius: 8px;
+      padding-left: 10px;
+      font-size: 6px;
+      height: 20px;
+    }
+  }
+  .button-open:hover {
+    transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: $c-brown;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+
+  //*Icon
+  &__icon {
+    // Media
+    @media screen and (max-width: 768px) {
+      margin: 0 auto;
+    }
+  }
+  .icon {
+    font-size: $fs-title3;
+    color: $c-icon;
+    // Media
+    @media screen and (max-width: 1024px) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 14px;
+    }
+  }
+  // Hover effect
+  .icon:hover {
+    transform: scale(1.15);
+  }
+  &__icon-instagram,
+  &__icon-facebook,
+  &__icon-vk,
+  &__icon-youtube {
+    margin-right: 25px;
+    // Media
+    @media screen and (max-width: 1024px) {
+      margin-right: 20px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-right: 15px;
+    }
+  }
+  //*Image
+  &__image {
+    margin-left: 10px;
+    // Media
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  &__image-content {
+    max-width: 415px;
+    width: 100%;
+    // Media
+    @media screen and (max-width: 1024px) {
+      max-width: 300px;
+    }
+  }
+
+  //*Form appointment
+  &__form {
+    box-shadow: 0 0 3px 1px rgba(221, 221, 221, 1);
+    transform: translate(-50%, -50%);
+    background-color: $c-orange;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    position: absolute;
+    width: fit-content;
+    position: fixed;
+    display: flex;
+    z-index: 999;
+    left: 50%;
+    top: 50%;
+    /* Hide */
+    pointer-events: none;
+    opacity: 0;
+  }
+  .show-modal {
+    pointer-events: all;
+    opacity: 1;
+  }
+  &__form-wrapper {
+    height: 340px;
+    width: 380px;
+    // Media
+    @media screen and (max-width: 1024px) {
+      height: 320px;
+      width: 360px;
+    }
+    @media screen and (max-width: 768px) {
+      height: 255px;
+      width: 260px;
+    }
+    @media screen and (max-width: 480px) {
+      height: 240px;
+      width: 220px;
+    }
+  }
+
+  //*Title
+  .title-form {
+    margin-bottom: 30px;
+    line-height: 10px;
+    font-size: 30px;
+    color: $c-brown;
+    // Media
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 20px;
+      line-height: 10px;
+      font-size: 20px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 18px;
+      font-size: 18px;
+    }
+    @media screen and (max-width: 480px) {
+      margin-bottom: 15px;
+    }
+  }
+  .conntainer-form {
+    flex-direction: column;
+    display: flex;
+    padding: 20px;
+    // Media
+    @media screen and (max-width: 768px) {
+      padding: 15px;
+    }
+    @media screen and (max-width: 480px) {
+      padding: 13px;
+    }
+  }
+  .form-content {
+    flex-direction: column;
+    display: flex;
+  }
+  input,
+  textarea {
+    box-shadow: 0 0 3px 1px rgba(221, 221, 221, 1);
+    border: 2px solid $c-white;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    padding: 7px;
+    // Media
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 10px;
+      border-radius: 8px;
+      padding: 6px;
+    }
+    @media screen and (max-width: 768px) {
+      border-radius: 6px;
+      padding: 5px;
+    }
+  }
+  .form-content-text {
+    overflow: auto;
+    // Media
+    @media screen and (max-width: 768px) {
+      height: 70px;
+    }
+  }
+  .form-button {
+    flex-direction: column;
+    display: flex;
+  }
+  .button-submit,
+  .button-close {
+    transform: translate(-50%, 0);
+    border-radius: 4px;
+    width: fit-content;
+    position: relative;
+    cursor: pointer;
+    color: $c-white;
+    padding: 0 7px;
+    border: none;
+    height: 26px;
+    left: 50%;
+    // Media
+    @media screen and (max-width: 1024px) {
+      padding: 6px;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 5px;
+      height: 20px;
+    }
+    @media screen and (max-width: 480px) {
+      padding: 4px;
+      height: 17px;
+    }
+  }
+  .button-submit {
+    background-color: $c-brown-light;
+    font-weight: 700;
+  }
+  .button-close {
+    background-color: $c-orange;
+    color: $c-black;
+    font-size: 8px;
+  }
+  .error-mod {
+    border: 2px solid $c-red;
+  }
+}

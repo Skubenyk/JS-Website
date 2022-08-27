@@ -1,0 +1,196 @@
+//*Footer
+
+//*Footer block
+.footer {
+  background-color: $c-brown;
+  color: $c-white;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  // Media
+  @media screen and (max-width: 1024px) {
+    font-size: 8px;
+  }
+  a {
+    color: $c-white;
+  }
+  &__wrapper {
+    justify-content: space-around;
+    display: flex;
+    padding: 10px;
+    // Media
+    @media screen and (max-width: 480px) {
+      padding: 5px;
+    }
+  }
+
+  //*Logo block
+  &__logo {
+    margin-right: 5px;
+    margin-left: 5px;
+    display: flex;
+    padding: 5px;
+    // Media
+    @media screen and (max-width: 480px) {
+      margin-right: 2px;
+      margin-left: 2px;
+      padding: 0;
+    }
+  }
+  &__logo-image {
+    background-color: $c-white;
+    border-radius: 50%;
+    margin-right: 10px;
+    height: 50px;
+    // Media
+    @media screen and (max-width: 1024px) {
+      margin-right: 5px;
+      height: 35px;
+    }
+    @media screen and (max-width: 480px) {
+      margin-right: 0;
+      height: 25px;
+    }
+  }
+  .logo-image {
+    height: 40px;
+    // Media
+    @media screen and (max-width: 1024px) {
+      height: 30px;
+    }
+    @media screen and (max-width: 480px) {
+      height: 20px;
+    }
+  }
+  &__logo-text {
+    margin-right: 5px;
+    margin-left: 5px;
+    max-width: 185px;
+    width: 100%;
+  }
+  &__logo-title {
+    line-height: 30px;
+    font-size: 30px;
+    // Media
+    @media screen and (max-width: 1024px) {
+      line-height: 25px;
+      font-size: 26px;
+    }
+    @media screen and (max-width: 480px) {
+      line-height: 20px;
+      font-size: 18px;
+    }
+  }
+  &__logo-subtitle {
+    margin-bottom: 10px;
+    // Media
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
+  }
+  &__logo-text-politics {
+    // Media
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  //*Link block
+  &__link {
+    justify-content: space-around;
+    margin-right: 5px;
+    margin-left: 5px;
+    display: flex;
+    padding: 5px;
+    width: 500px;
+    // Media
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+    @media screen and (max-width: 480px) {
+      margin-right: 2px;
+      margin-left: 2px;
+      padding: 0;
+    }
+  }
+  &__link-column1 {
+    margin-right: 5px;
+  }
+  .link-column {
+    margin-bottom: 5px;
+    padding: 5px;
+  }
+
+  //*Apps block
+  &__apps {
+    margin-right: 5px;
+    flex-flow: column;
+    margin-left: 5px;
+    display: flex;
+    padding: 5px;
+    // Media
+    @media screen and (max-width: 480px) {
+      padding: 0;
+    }
+  }
+  &__apps-mobile {
+    justify-content: space-around;
+    margin-bottom: 30px;
+    display: flex;
+    // Media
+    @media screen and (max-width: 768px) {
+      margin-bottom: 10px;
+    }
+  }
+  .app-store,
+  .google-play {
+    width: 100px;
+    // Media
+    @media screen and (max-width: 1024px) {
+      width: 80px;
+    }
+    @media screen and (max-width: 480px) {
+      width: 60px;
+    }
+  }
+  .app-store {
+    margin-right: 20px;
+    // Media
+    @media screen and (max-width: 1024px) {
+      margin-right: 10px;
+    }
+    @media screen and (max-width: 480px) {
+      margin-right: 5px;
+    }
+  }
+  // Hover effect
+  .app-store:hover {
+    transform: scale(1.04);
+  }
+  .google-play:hover {
+    transform: scale(1.04);
+  }
+  &__apps-icon {
+    justify-content: space-around;
+    margin-bottom: 15px;
+    display: flex;
+    // Media
+    @media screen and (max-width: 768px) {
+      margin-bottom: 5px;
+    }
+  }
+  .icon {
+    font-size: 24px;
+    // Media
+    @media screen and (max-width: 1024px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 16px;
+    }
+  }
+  // Hover effect
+  .icon:hover {
+    transform: scale(1.15);
+  }
+}

@@ -1,0 +1,53 @@
+//-*Appointment
+
+mixin appointment()
+  //-*Appointment block
+  section.appointment
+    .appointment__wrapper
+      //-*Text image block  
+      .appointment__text-image
+        //-*Text icon block
+        .appointment__text-icon
+          .appointment__text
+            h2.appointment__text-title Айболит круглосуточная ветклиника
+            button(type="button" class="button-open" id="js-button-open")
+              span ЗАПИСАТЬСЯ    
+          //-*Icon
+          .appointment__icon
+            a(href="#").appointment__icon-instagram
+              svg.icon icon-instagram
+                use(xlink:href="#icon-instagram")
+            a(href="#").appointment__icon-facebook    
+              svg.icon icon-facebook
+                use(xlink:href="#icon-facebook")
+            a(href="#").appointment__icon-vk
+              svg.icon icon-vk
+                use(xlink:href="#icon-vk")
+            a(href="#").appointment__icon-youtube
+              svg.icon icon-youtube
+                use(xlink:href="#icon-youtube")
+        //-*Image
+        .appointment__image
+          img(src="./assets/image/cat_dog.png" alt="foto").appointment__image-content
+      //-*Appointment form
+      .appointment__form(id="js-modal")
+        .appointment__form-wrapper
+          form(action="#" method="post" id="js-textForm") 
+            .conntainer-form
+              //-*Title form
+              h2.title-form Запись на прием
+              //-*Content form
+              .form-content
+                label(for="name")
+                input(type="text" placeholder="Имя" name="name" class="name" id="js-name")
+                label(for="tel")
+                input(type="tel" placeholder="Телефон" name="tel" class="tel" id="js-tel" pattern= "[0-9]+")
+                label(for="text")
+                textarea(rows="8" placeholder="Кратко опишите проблему" name="text" class="form-content-text" id="js-text")
+              //-*Button form
+              .form-button 
+                button(type="submit" class="button-submit" id="js-button-submit")
+                  span ОТПРАВИТЬ
+                button(type="button" class="button-close" id="js-button-close")
+                  span ЗАКРЫТЬ
+

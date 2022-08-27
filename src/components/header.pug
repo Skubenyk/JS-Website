@@ -1,0 +1,40 @@
+//-*Header
+
+mixin header()
+  //-*Header
+  header.header
+    .header__wrapper
+      //-*Logo
+      .header__logo
+        a(href="#" class="logo")
+          img(src="./assets/image/logo.png" alt="Logo").logo-image
+      .header__block
+        .header__navigation(id="js-header-navigation")
+          //-*Navigation
+          nav.navigation
+            ul.navigation__list
+              li.navigation__item
+                a(href="#" class="navigation__link js-navigation-item") ЛИЧНЫЙ КАБИНЕТ
+              li.navigation__item
+                a(href="#" class="navigation__link js-navigation-item") О НАС
+              li.navigation__item
+                a(href="#" class="navigation__link js-navigation-item") НОВОСТИ И АКЦИИ
+              li.navigation__item
+                a(href="#" class="navigation__link js-navigation-item") КОНТАКТЫ
+              li.navigation__item
+                a(href="#" class="navigation__link js-navigation-item") БЛОГ
+        //-*Buttons
+        .header__other
+          button(type="button" class="button button--transparent header__other__item")
+            span ВХОД
+          button(type="button" class="button header__other__item" id="js-reg-button-open")
+            span РЕГИСТРАЦИЯ     
+        //-*Burger
+        div(class="header__other__item header__burger")
+          button(id="js-burger" type="button" class="burger")
+            span
+            span
+            span
+
+
+
